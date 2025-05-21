@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f4c3;
+}
+
+h2 {
+  font-weight: 500;
+  font-family: "Bebas Neue";
+  margin: 15px auto;
+  font-size: 45px;
+  color: #33691e;
+}
+
+span {
+  font-size: 19px;
+  font-family: "Open Sans";
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 45px 45px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  border-radius: 15px;
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  max-width: 600px;
+}
+
+form {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+label {
+  font-family: "Bebas Neue";
+  display: block;
+  margin: 5px auto;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #2ecc71;
+  color: black;
+  border: none;
+  padding: 15px 20px;
+  font-size: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+.mensagem-sucesso {
+  color: black;
+}
+
+.mensagem-erro {
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 15px auto;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .container {
+    margin: 0;
+  }
+  .h2 {
+    font-size: 10px;
+  }
+  .button {
+    text-align: center;
+  }
+  .mensagem-sucesso {
+    padding: 10px;
+  }
+
+  .mensagem-erro {
+    padding: 10px;
+  }
+}
